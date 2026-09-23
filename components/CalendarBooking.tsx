@@ -20,7 +20,7 @@ export const CalendarBooking: React.FC<CalendarBookingProps> = ({
   const [iframeLoaded, setIframeLoaded] = useState(false);
 
   // Read environment variable or default fallback
-  const calcomBaseUrl = process.env.NEXT_PUBLIC_CALCOM_LINK || "https://cal.com/demo";
+  const calcomBaseUrl = process.env.BASE_CALCOM_LINK || "https://cal.com/demo";
 
   // Append lead metadata parameters to Cal.com API URL
   const queryParams = new URLSearchParams({
